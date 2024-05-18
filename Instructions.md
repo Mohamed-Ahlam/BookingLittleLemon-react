@@ -1,5 +1,20 @@
 # Setting Up Your Project:
 
+# VSCode Extensions to Add (Preliminary Steps):
+
+## Step 1: Setup the ES7+ React/Redux/GraphQL/React-Native VS Code extension
+    ES7+ React/Redux/GraphQL/React-Native VS Code extension
+- It provides quick JavaScript snippets to help you code faster in your React and GraphQL-based projects.
+. This extension provides you with JavaScript and React/Redux snippets in ES7+ with Babel plugin features for VS Code.
+
+## Step 2: Setup the Auto Rename Tag VS Code extension
+    Auto Rename Tag VS Code extension
+. This extension makes it possible to automatically rename the paired HTML/XML tag as Visual Studio IDE does.
+
+## Step 3: Setup the Trailing Spaces VS Code extension
+    Trailing Spaces VS Code extension
+. This extension allows you to highlight and delete trailing spaces. It’s also useful when working with Git to help you spot accidental whitespace addictions more easily and prevent unnecessary commits.
+
 # Prepare Your Development Environment:
 
 Ensure you have the correct version of Node.js and npm installed on your machine
