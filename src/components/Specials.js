@@ -5,10 +5,9 @@ function Specials(){
     return (
         <div className="specials">
             <div className="specialsHeader">
-            <h2>This Weeks Specials!</h2>
-            <Button input="Online Menu"/>
+            <h2 className="pushRight">This Weeks Specials!</h2>
+            <Button  input="Online Menu"/>
             </div>
-
 
             <div className="specialsGrid">
                 <div className="card">
@@ -25,13 +24,13 @@ function Specials(){
                 {/* gs */}
 
                 <div className="card">
-                    <img src="./images/salad.jpg" alt="greek salad" style={{width:"100%"}}/>
+                    <img src="./images/bruschetta.jpg" alt="bruschetta" style={{width:"100%"}}/>
                     <div className="cardHeader">
-                        <h3>Greek Salad</h3>
-                        <p>$12.99</p>
+                        <h3>Bruschetta</h3>
+                        <p>$16.79</p>
                     </div>
                     <div className="cardDescription">
-                        <p>Refreshing salad made with tomato, lettuce, <br/> feta cheese, and olives dressed with salt, hot <br/>pepper, and olive oil</p>
+                        <p>Toasted bread, topped with tomato, prosciutto, and cheese. Seasoned with salt and olive oil.</p>
                         <Button input="Order for Delivery"/>
                     </div>
                 </div>
@@ -39,13 +38,13 @@ function Specials(){
                 {/* fs */}
 
                 <div className="card">
-                    <img src="./images/salad.jpg" alt="greek salad" style={{width:"100%"}}/>
+                    <img src="./images/pasta.jpg" alt="pasta" style={{width:"100%"}}/>
                     <div className="cardHeader">
-                        <h3>Greek Salad</h3>
-                        <p>$12.99</p>
+                        <h3>Pasta</h3>
+                        <p>$13.11</p>
                     </div>
                     <div className="cardDescription">
-                        <p>Refreshing salad made with tomato, lettuce, <br/> feta cheese, and olives dressed with salt, hot <br/>pepper, and olive oil</p>
+                        <p>Special homemade pasta, topped with tomato, basil, cheese, and lemon</p>
                         <Button input="Order for Delivery"/>
                     </div>
                 </div>

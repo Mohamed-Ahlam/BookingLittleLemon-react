@@ -15,7 +15,8 @@ function Nav(){
                 <div><a href="#">Menu</a></div>
                 <div><a href="#">Reservation</a></div>
                 <div><a href="#">Order Online</a></div>
-                <div><a href="#">Login</a></div>
+
+                {/* <div><a href="#">Login</a></div> */}
 
         </nav>
 

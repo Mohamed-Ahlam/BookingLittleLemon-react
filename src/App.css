@@ -84,9 +84,8 @@
 }
 
 
-                                    /* hero */
+                                    /* specials */
 .specials{
-    border: 1px solid black;
     position: relative;
     top: 140px;
 
@@ -95,10 +94,29 @@
 }
 .specialsHeader{
     display: flex;
+    margin-bottom: 30px;
+    /* justify-content: center; */
+    /* gap:30% */
 }
-.specialsHeader:nth-child(2){
-    border: 1px solid gold;
+.specialsHeader Button{
+    margin-right: 130px;
+
 }
+
+.specialsHeader h2{
+    flex-grow: 1;
+
+    font-size: 34px;
+    font-family: Markazi;
+    font-weight: bolder;
+}
+
+/* .pushRight{
+    margin-right: auto;
+
+} */
+
+
 
 .specialsGrid{
     display:grid;
@@ -107,10 +125,12 @@
 }
 
 .card{
-    width: 60%;
+    width: 70%;
+    text-align: start;
+
     background-color: #EDEFEE;
     border-radius: 5px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 
     /* add more transitions */
     transition: 0.3s;
@@ -128,27 +148,53 @@
 .cardHeader{
     display: flex;
     gap: 80px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: bolder;
+
 
 }
 .cardHeader h3{
-    font-size: 20px;
+    font-size: 18px;
+    
 }
 .cardHeader p{
-    font-size: 17px;
-    font-weight: bolder;
+    font-size: 16px;
 }
 
 .cardDescription{
-    font-size: 15px;
-    font-weight: bold;
+    display: inline-block;
+    /* trying height and border to make cards the exact same placing */
+    height:200px;
+    border:1px solid black;
+    width: 90%;
+
+    margin-left: 10px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    line-height: 1.5;
     color: #454444;
+}
+.cardDescription p{
+    margin-bottom: 25px;
+}
+
+.cardDescription Button{
+        /* trying these 3 to make cards the exact same placing */
+
+    margin-bottom: 20px;
+    position: relative;
+    bottom:10px;
+    /* left:40px */
 }
 
 .btn button{
-    width: 70%;
-    height: 10%;
+    /* width: 50%;
+    height: 100%; */
+
+    min-height:30px; 
+    min-width: 120px;
 
     padding: 14px 18px;
     border-radius: 16px;
@@ -159,3 +205,4 @@
     color:black;
     cursor: pointer;
 }
+
