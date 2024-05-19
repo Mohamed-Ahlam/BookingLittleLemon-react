@@ -1,5 +1,6 @@
 import './App.css';
-import Header from './components/Header';
+// ADD META TAGS
+import Hero from './components/Hero';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -12,7 +13,7 @@ function App() {
     //  a fragment starts with a <> tag and ends with a </> tag.
     <>
       <Nav/>
-      <Header/>
+      <Hero/>
       <Main/>
       <Footer/>
     </>

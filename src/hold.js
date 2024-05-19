@@ -5,7 +5,6 @@
 }
 
                                     /* NAV */
-
 .primaryHeader{
     display: flex;
     align-items: center;
@@ -31,58 +30,24 @@
 .logo img{
 
     margin: 10px 20px;
-    height: 60px;
-    width: 240px;
+    min-height: 60px;
+    min-width: 240px;
+
+    border: 1px solid black;
+
     /* to make responsive */
-    display: block;
-    max-width: 100%;
+    /* display: block;
+    max-width: 100%; */
 }
 
-/* do max-width and margin-inline of header as whole */
+/* do max-width and margin-inline of  */
 
                                     /* hero */
 
 .hero{
     display: flex;
-    background: #495E57;
-    height: 40vh;
-    align-items: center;
-    gap:10%;
-    justify-content: center;
-
-    color:white;
+    background-color: bisque;
 }
-.heroText{
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-left: 10px;
-}
-.heroText h1{
-    font-size: 54px;
-    font-family: Markazi;
-}
-.heroText button{
-    width: 190px;
-
-    padding: 14px 18px;
-    border-radius: 16px;
-    background-color: #F4CE14;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    color:black;
-    cursor: pointer;
-
-}
-.heroImg img{
-    position: relative;
-    top: 90px;
-    height: 40vh;
-    border-radius: 20px;
-    width: 350px;
-}
-
 
 
                                     /* list of foods */

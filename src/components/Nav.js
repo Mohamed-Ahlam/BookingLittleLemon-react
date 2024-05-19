@@ -16,6 +16,8 @@ function Nav(){
                 <div><a href="#">Login</a></div>
 
         </nav>
+
+        {/* make a mobile nav */}
         
         </div>
     )
