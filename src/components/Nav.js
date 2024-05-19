@@ -1,5 +1,7 @@
 import React from "react";
 
+// MAKE LINKS WORK LATER 
+
 function Nav(){
     return(
         <div className="primaryHeader">

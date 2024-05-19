@@ -2,7 +2,7 @@ import './App.css';
 // ADD META TAGS
 import Hero from './components/Hero';
 import Nav from './components/Nav';
-import Main from './components/Main';
+import Specials from './components/Specials';
 import Footer from './components/Footer';
 
 
@@ -14,8 +14,8 @@ function App() {
     <>
       <Nav/>
       <Hero/>
-      <Main/>
-      <Footer/>
+      <Specials/>
+      {/* <Footer/> */}
     </>
   );
 }

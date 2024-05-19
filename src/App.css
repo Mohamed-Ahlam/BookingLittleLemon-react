@@ -84,12 +84,78 @@
 }
 
 
+                                    /* hero */
+.specials{
+    border: 1px solid black;
+    position: relative;
+    top: 140px;
 
-                                    /* list of foods */
-/*
-grid{
-    display:gird;
-    gap:2rem;
-    grid-template-columns:
-        repeat(auto-fit, minmax(250px,1fr));
-*/
+    margin: 0 80px;
+
+}
+.specialsHeader{
+    display: flex;
+}
+.specialsHeader:nth-child(2){
+    border: 1px solid gold;
+}
+
+.specialsGrid{
+    display:grid;
+    /* gap:3%; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    width: 60%;
+    background-color: #EDEFEE;
+    border-radius: 5px;
+    margin-right: 20px;
+
+    /* add more transitions */
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.card img{
+    width:100%;
+    /* height: 200px; */
+    border-radius: 5px 5px 0 0;
+}
+.cardHeader{
+    display: flex;
+    gap: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.cardHeader h3{
+    font-size: 20px;
+}
+.cardHeader p{
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.cardDescription{
+    font-size: 15px;
+    font-weight: bold;
+    color: #454444;
+}
+
+.btn button{
+    width: 70%;
+    height: 10%;
+
+    padding: 14px 18px;
+    border-radius: 16px;
+    background-color: #F4CE14;
+    font-size: 2ex;
+    font-weight: bold;
+    border: none;
+    color:black;
+    cursor: pointer;
+}
