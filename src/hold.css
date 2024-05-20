@@ -142,13 +142,8 @@
     transition: 0.3s;
     font-family: karla;
 
+}
 
-}
-.cardInfo{
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-}
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
@@ -163,12 +158,10 @@
     gap: 80px;
     margin-top: 15px;
     margin-bottom: 10px;
-
-    /* dont need to do margin on SEPERATE stuff u can just do a div around header and cardDescription and margin all of that */
     /* margin-left: 10px; */
     font-weight: bolder;
 
-    /* justify-content: space-around; */
+    justify-content: space-around;
 
 
 }
@@ -188,8 +181,7 @@
     /* border:1px solid black; */
     width: 90%;
 
-    /* dont need to do margin on SEPERATE stuff u can just do a div around cardheader and cardDescription and margin all of that */
-/*  margin-left: 25px; */
+    margin-left: 25px;
     font-size: 18px;
     font-family: karla;
 
@@ -203,16 +195,19 @@
 .cardDescription Button{
         /* trying these 3 to make cards the exact same placing */
 
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     position: relative;
-    /* bottom:10px; */
+    bottom:10px;
     /* left:40px */
 }
 
 .btn button{
+    /* width: 50%;
+    height: 100%; */
+
     min-height:30px;
     min-width: 120px;
-    /* margin-left: 60px; */
+    margin-left: 60px;
 
     padding: 14px 18px;
     border-radius: 16px;
@@ -226,7 +221,6 @@
 
                                     /* Testimonial */
 .testimonial{
-    /* put border each time on each area then play with heightXwidth to see how big u want the area to be */
     /* border: 1px solid rgb(212, 11, 11); */
     position: relative;
     top: 190px;

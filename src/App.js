@@ -17,7 +17,7 @@ function App() {
       <Hero/>
       <Specials/>
       <Testimonial/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
