@@ -12,9 +12,9 @@
     justify-content: space-between;
 }
 
-.primaryHeader{
+/* .primaryHeader{
     outline: 2px solid lightblue;
-}
+} */
 .nav {
     /* flex-grow: 1; */
     display: flex;
@@ -88,6 +88,8 @@
 .specials{
     position: relative;
     top: 140px;
+    height: 70vh;
+    /* background-color: #EDEFEE; */
 
     margin: 0 80px;
 
@@ -100,6 +102,7 @@
 }
 .specialsHeader Button{
     margin-right: 130px;
+    width: 200px;
 
 }
 
@@ -206,3 +209,71 @@
     cursor: pointer;
 }
 
+                                    /* Testimonial */
+.testimonial{
+    /* border: 1px solid rgb(212, 11, 11); */
+    position: relative;
+    top: 190px;
+    height: 45vh;
+    background: #495E57;
+
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    row-gap: 50px;
+}
+
+.testimonial h2{
+    font-family: Markazi;
+    font-size: 44px;
+    color: #F4CE14;
+}
+
+
+.box{
+    /* border: 1px solid rgb(255, 0, 251); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    background-color:white;
+    width: 240px;
+
+    border-radius: 10%;
+}
+.ratings{
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+}
+.rater{
+    display: flex;
+    gap:10%;
+}
+.rater img{
+    width: 60px;
+    height: 40px;
+    border-radius: 16%;
+}
+
+.personRating{
+    display: inline-block;
+    /* trying height and border to make cards the exact same placing */
+    height:75px;
+    width: 85%;
+
+    margin-left: 10px;
+    font-size: 10px;
+    /* font-weight: bold; */
+    line-height: 1.5;
+    color: #454444;
+}
+
+.ratingsContainer{
+    display: flex;
+    gap:5%;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import Hero from './components/Hero';
 import Nav from './components/Nav';
 import Specials from './components/Specials';
+import Testimonial from './components/Testimonial';
 import Footer from './components/Footer';
 
 
@@ -15,6 +16,7 @@ function App() {
       <Nav/>
       <Hero/>
       <Specials/>
+      <Testimonial/>
       {/* <Footer/> */}
     </>
   );
