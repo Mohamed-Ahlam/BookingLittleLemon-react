@@ -300,9 +300,14 @@
 .footer{
     /* border: 1px solid rgb(68, 255, 0); */
     background-color: #EDEFEE;
-    position: relative;
+    /* position: relative;
     top: 190px;
+    height: 35vh; */
+
+    position: absolute;
+    bottom: 0;
     height: 35vh;
+    width: 100%;
 
 
     display: flex;
@@ -325,4 +330,12 @@
 
 .foot > *{
     margin-bottom: 10px;
+}
+
+
+                                    /* Booking form */
+.bookingForm{
+    height: 100vh;
+    margin-left: 40%;
+    margin-top: 100px;
 }

@@ -1,6 +1,5 @@
 import React from "react";
-
-// MAKE LINKS WORK LATER 
+import {Link} from 'react-router-dom';
 
 function Nav(){
     return(
@@ -9,12 +8,12 @@ function Nav(){
         
         <nav className="nav">
            
-                <div><a href="#">Home</a></div>
-                <div><a href="#">About</a></div>
-                <div><a href="#">Services</a></div>
-                <div><a href="#">Menu</a></div>
-                <div><a href="#">Reservation</a></div>
-                <div><a href="#">Order Online</a></div>
+        <Link to="/" style={{ color: "white"}}><div><a href="#">Home</a></div></Link>
+        <Link to="/" style={{ color: "white"}}><div><a href="#">About</a></div></Link>
+        {/* <Link to="/" style={{ color: "white"}}><div><a href="#">Services</a></div></Link> */}
+        <Link to="/" style={{ color: "white"}}><div><a href="#">Menu</a></div></Link>
+        <Link to="/booking" style={{ color: "white"}}><div><a href="#">Reservation</a></div></Link>
+        <Link to="/" style={{ color: "white"}}><div><a href="#">Order Online</a></div></Link>
 
                 {/* <div><a href="#">Login</a></div> */}
 
