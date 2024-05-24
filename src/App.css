@@ -4,338 +4,84 @@
     box-sizing: border-box;
 }
 
-                                    /* NAV */
-
-.primaryHeader{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* .primaryHeader{
-    outline: 2px solid lightblue;
-} */
-.nav {
-    /* flex-grow: 1; */
-    display: flex;
-    margin-right: 20px;
-  }
-.nav a{
-    padding: 12px 14px;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
-}
-
-.logo img{
-
-    margin: 10px 20px;
-    height: 60px;
-    width: 240px;
-    /* to make responsive */
-    display: block;
-    max-width: 100%;
-}
-
-/* do max-width and margin-inline of header as whole */
 
                                     /* hero */
 
-.hero{
-    display: flex;
+header{
     background: #495E57;
-    height: 40vh;
-    align-items: center;
-    gap:10%;
-    justify-content: center;
-
+    /* max-height: 30vh; doesnt work bc it stays the same even when content grows/shortens*/
     color:white;
-}
-.heroText{
     display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-left: 10px;
+    align-items: center;
 }
-.heroText h1{
-    font-size: 54px;
-    font-family: Markazi;
-}
-.heroText button{
-    width: 190px;
+            /* hero img stuff */
 
-    padding: 14px 18px;
-    border-radius: 16px;
-    background-color: #F4CE14;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    color:black;
-    cursor: pointer;
-
+.heroImg{
+    margin-right: 40px;
+    /* margin-top: 40px;
+    margin-bottom: 40px; */
 }
 .heroImg img{
-    position: relative;
-    top: 90px;
-    height: 40vh;
-    border-radius: 20px;
-    width: 350px;
+    max-width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    /* margin-bottom: 50px; */
 }
 
-
-                                    /* specials */
-.specials{
-    position: relative;
-    top: 140px;
-    height: 70vh;
-    /* background-color: #EDEFEE; */
-
-    margin: 0 80px;
-
+            /* hero text stuff */
+.heroText{
+    margin-left: 40px;
 }
-.specialsHeader{
-    display: flex;
-    margin-bottom: 30px;
-    /* justify-content: center; */
-    /* gap:30% */
+/* gives spacing btwn stuff inside heroText */
+.heroText > *{
+    margin: 20px;
 }
-.specialsHeader Button{
-    margin-right: 130px;
-    width: 200px;
-
+.heroText h1{
+    font-size: 2.5rem;
+    color: #F4CE14;
+    margin-bottom: 0;
 }
-
-.specialsHeader h2{
-    flex-grow: 1;
-
-    font-size: 34px;
-    font-family: Markazi;
-    font-weight: bolder;
+.heroText h2{
+    font-size: 2rem;
+    margin-top: 0px;
+}
+.heroText p{
+    /* max-width: 80%; */
+    font-size: 1.3rem;
 }
 
-/* .pushRight{
-    margin-right: auto;
-
-} */
-
-
-
-.specialsGrid{
-    display:grid;
-    /* gap:3%; */
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.card{
-    width: 70%;
-    height: 450px;
-    text-align: start;
-
-    border: 1px solid black;
-
-    background-color: #EDEFEE;
-    border-radius: 5px;
-    /* margin-right: 20px; */
-
-    /* add more transitions */
-    transition: 0.3s;
-    font-family: karla;
-
-
-}
-.cardInfo{
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-}
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
-.card img{
-    width:100%;
-    /* height: 200px; */
-    border-radius: 5px 5px 0 0;
-}
-.cardHeader{
-    display: flex;
-    gap: 80px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-
-    /* dont need to do margin on SEPERATE stuff u can just do a div around header and cardDescription and margin all of that */
-    /* margin-left: 10px; */
-    font-weight: bolder;
-
-    /* justify-content: space-around; */
-
-
-}
-.cardHeader h3{
-    font-size: 20px;
-    
-}
-.cardHeader p{
-    font-size: 18px;
-    color:#8f7c22;
-}
-
-.cardDescription{
-    display: inline-block;
-    /* trying height and border to make cards the exact same placing */
-    height:130px;
-    /* border:1px solid black; */
-    width: 90%;
-
-    /* dont need to do margin on SEPERATE stuff u can just do a div around cardheader and cardDescription and margin all of that */
-/*  margin-left: 25px; */
-    font-size: 18px;
-    font-family: karla;
-
-    line-height: 1.5;
-    color: #454444;
-}
-.cardDescription p{
-    margin-bottom: 25px;
-}
-
-.cardDescription Button{
-        /* trying these 3 to make cards the exact same placing */
-
-    /* margin-bottom: 20px; */
-    position: relative;
-    /* bottom:10px; */
-    /* left:40px */
-}
-
+        /* Button component stuff */
 .btn button{
-    min-height:30px;
-    min-width: 120px;
+    /* min-height:50px;
+    min-width: 150px; */
     /* margin-left: 60px; */
 
+    margin-top: 20px;
     padding: 14px 18px;
     border-radius: 16px;
     background-color: #F4CE14;
-    font-size: 2.5ex;
+    font-size: 1.5rem;
     font-weight: bold;
     border: none;
     color:black;
     cursor: pointer;
 }
 
-                                    /* Testimonial */
-.testimonial{
-    /* put border each time on each area then play with heightXwidth to see how big u want the area to be */
-    /* border: 1px solid rgb(212, 11, 11); */
-    position: relative;
-    top: 190px;
-    height: 45vh;
-    background: #495E57;
 
-
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    row-gap: 50px;
-}
-
-.testimonial h2{
-    font-family: Markazi;
-    font-size: 44px;
-    color: #F4CE14;
-}
-
-
-.box{
-    /* border: 1px solid rgb(255, 0, 251); */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    background-color:white;
-    width: 240px;
-    font-family: karla;
-
-
-    border-radius: 10%;
-}
-.ratings{
-    width: 100px;
-    height: 20px;
-    margin-top: 20px;
-}
-.rater{
-    display: flex;
-    gap:10%;
-}
-.rater img{
-    width: 60px;
-    height: 40px;
-    border-radius: 16%;
-}
-
-.personRating{
-    display: inline-block;
-    /* trying height and border to make cards the exact same placing */
-    height:75px;
-    width: 85%;
-
-    margin-left: 10px;
-    font-size: 12px;
-
-    line-height: 1.5;
-    color: #454444;
-}
-
-.ratingsContainer{
-    display: flex;
-    gap:5%;
-}
-
-                                    /* footer */
-.footer{
-    /* border: 1px solid rgb(68, 255, 0); */
-    background-color: #EDEFEE;
-    /* position: relative;
-    top: 190px;
-    height: 35vh; */
-
-    position: absolute;
-    bottom: 0;
-    height: 35vh;
-    width: 100%;
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-
-.footer img{
-    width: 100px;
-    height: 150px;
-}
-
-
-.foot{
-    font-size: 16px;
-    letter-spacing:3px;
-    font-family: karla;
-}
-
-.foot > *{
-    margin-bottom: 10px;
-}
-
-
-                                    /* Booking form */
-.bookingForm{
-    height: 100vh;
-    margin-left: 40%;
-    margin-top: 100px;
+/* @media screen and (max-width: 430px){ */
+    @media screen and (max-width: 600px){
+        header{
+            justify-content: start;
+            align-items: start;
+        }
+        .heroImg{
+            display: none;
+        }
+        .heroText p{
+            max-width: 80%;
+            /* word-wrap: break-word; */
+        }
+        .heroText{
+            margin-left: 0px;
+        }
 }

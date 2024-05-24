@@ -1,19 +1,31 @@
 import React from "react";
+import Button from "./Button"
 
 function Hero(){
     return (
-        <div className="hero">
-            <div className="heroText">
-                <h1>Little Lemon</h1>
-                <h2>Minneapolis</h2>
-                <div>
-                <h3>We are a family owned Mediterranean restaurent located <br/>on Maldova Street in Minneapolis, Minnesota. We focus <br/> on traditional recipes served with a modern twist</h3>
-                    </div>
-                <button type="submit">Reserve a table</button>
-            </div>
 
-            <div className="heroImg"><img src="./images/heroImg.jpg" alt="hero image"/></div>
-        </div>
+        <>
+        <header>
+        {/* <div className="hero"> */}
+                <div className="heroText">
+                    <h1>Little Lemon</h1>
+                    <h2>Minneapolis</h2>
+                    {/* <p>We are a family owned Mediterranean restaurent located <br/>on Maldova Street in Minneapolis, Minnesota. We focus <br/> on traditional recipes served with a modern twist</p> */}
+                    <p>We are a family owned Mediterranean restaurent located on Maldova Street in Minneapolis, Minnesota. We focus on traditional recipes served with a modern twist</p>
+                    <Button input="Reserve a table"></Button>
+                </div>
+
+                <div className="heroImg">
+                    {/* <div className="imgContainer"> */}
+                    <img src="./images/heroImg.webp" alt="hero image"/></div>
+                    {/* </div> */}
+                    
+            {/* </div> */}
+        </header>
+        
+        </>
+            
+
     )
 }
 
