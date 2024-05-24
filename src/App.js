@@ -39,7 +39,7 @@ function App() {
     <Router>
       {/* The App component’s root element uses a div element. As this is not a semantic tag, replace it with a React fragment. a fragment starts with a <> tag and ends with a </> tag.*/}
       <>
-        {/* <Nav/> */}
+        <Nav/>
           <Routes>
           <Route path='/' exact element={<Homepage/>}/>
           {/* <Route path='/booking' exact element={<BookingPage availableTimes={availableTimes}/>}/> */}
