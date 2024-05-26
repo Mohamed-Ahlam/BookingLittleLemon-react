@@ -176,6 +176,8 @@ display: flex;
 gap:4%;
 /* max-width:700px; */
 flex-wrap: wrap;
+row-gap: 20px;
+
 }
 .specialsGrid img{
 max-width: 100%;
@@ -258,11 +260,14 @@ font-weight: bolder;
   margin-top:70px;
   margin-bottom:30px;
 
+  /* position: absolute;
+  bottom: 0; */
+
   display: flex;
   justify-content: center;
   align-items: start;
   gap:10%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 
   font-size: 1rem;
   font-family: Markazi;
@@ -323,6 +328,19 @@ font-weight: bolder;
       }
       .heroText{
           margin-left: 0px;
+      }
+
+      .specialsGrid{
+        justify-content: center;
+      }
+
+
+      .footer {
+        /* padding: 10px 8%; */
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        justify-content: center;
       }
 }
 
