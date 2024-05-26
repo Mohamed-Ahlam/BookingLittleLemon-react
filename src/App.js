@@ -46,7 +46,7 @@ function App() {
           <Route path='/booking' exact element={<BookingPage />}/>
 
           </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </>
     </Router>
   );
