@@ -10,7 +10,7 @@
   height: 60px;
   margin-left: 0;
 }
-                               
+
 li{
   list-style: none;
 }
@@ -202,6 +202,55 @@ font-size: 1rem;
 font-weight: bolder;
 }
 
+                                        /* testimonial */
+ .testimonial{
+    margin:70px 0;
+    padding: 60px;
+    background-color: #495E57;
+    text-align: center;
+    /* display: flex; NO FLEX BC THEIR BOTH IN A DIV SO THE HEADER(Testimonial) AND RATINGS ARE IN SEPEARTE LINES*/
+  }
+  .testimonial h2{
+    font-size: 2rem;
+    color:#F4CE14;
+      font-family: Markazi                                                                                              n mmv;
+  }
+
+  .ratingsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .rating{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    /* display: flex; */
+    width: 240px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .rating .starImg{
+    width: 100px;
+    height: 20px;
+  }
+  .personRating{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+  .personRating .profilePic{
+    width: 60px;
+    height: 40px;
+    border-radius: 16%;
+}
+
 
   @media screen and (max-width: 768px){
 
@@ -252,3 +301,13 @@ font-weight: bolder;
           margin-left: 0px;
       }
 }
+
+
+
+/* questions
+
+- how to place a section of a page?
+- bc i just did margin to space sections off
+- before i did position - but that wasnt it - OR was it bc i set a specific height of the section which made it not work
+
+*/
