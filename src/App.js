@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Homepage from './components/Homepage';
 import BookingPage from "./components/BookingPage";
 import Footer from './components/Footer';
+import ConfirmedBooking from './components/ConfirmedBooking';
 import { useState, useReducer } from "react";
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path='/' exact element={<Homepage/>}/>
           {/* <Route path='/booking' exact element={<BookingPage availableTimes={availableTimes}/>}/> */}
           <Route path='/booking' exact element={<BookingPage />}/>
+          <Route path='/confirmation' exact element={<ConfirmedBooking/>}/>
 
           </Routes>
         <Footer/>

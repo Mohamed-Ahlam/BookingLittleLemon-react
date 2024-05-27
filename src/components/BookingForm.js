@@ -2,6 +2,8 @@ import React from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Button from "./Button"
+import ConfirmedBooking from "./ConfirmedBooking";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -10,15 +12,14 @@ import { useState } from "react";
 // function BookingForm(props){
 function BookingForm(){
 
-    // state
-    const [startDate, setStartDate] = React.useState(new Date());
+        // state
+        const [startDate, setStartDate] = React.useState(new Date());
 
-    const [timeData, setTimeData] = useState(undefined);
-  
-    const [guestData, setGuestData] = useState(undefined);
-  
-    const [occasionData, setOccasionData] = useState(undefined);
-
+        const [timeData, setTimeData] = useState(undefined);
+      
+        const [guestData, setGuestData] = useState(undefined);
+      
+        const [occasionData, setOccasionData] = useState(undefined);
 
     // data
     const availableTimes =[
@@ -54,73 +55,86 @@ function BookingForm(){
         setOccasionData(event.target.value);
     };
 
-
     return(
         <div className="bookingForm">
-            <h1>Reserve Part 1</h1>
+            <h1>Reservation</h1>
         {/* <form> */}
-        <form style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
-            {/* <label htmlFor="theDate">
-                    <b>Choose date</b>
+        <form>
+            <div className="userInput"> 
+            <label htmlFor="theDate">
+                    Choose date:
             </label>
             <DatePicker
                     label="Controlled picker"
                     selected={startDate}
                     onChange={(newValue) => setStartDate(newValue)}
-                    className="w3-input w3-border"
+                    className="date"
                     id="theDate"
-            /> */}
-
+                    style={{height: "30px", width: "200px", backgroundColor: "#EEEEEE"}}
+            />
+            </div>
+            
+            <div className="userInput">
             <label htmlFor="time">
-                    <b>Please Select a Time:</b>
-            </label>
-            <select onChange={timeOptionsHandler} >
-                    {availableTimes.map(option => {
-                        return (
-                            <option value={option.value}>
-                                {option.text}
-                            </option>
-                        );
-                    })}
-            </select>
-            <h3>You selected: {timeData} </h3>
-           
-            {/* <label htmlFor="time">
-                    <b>Number of guests</b>
-            </label>
-            <select onChange={numberOfGuestChangeHandler}>
-                <option>Please choose one option</option>
-                {numberOfGuestOption.map((option, index) => {
-                    return (
-                        <option value={option} key={index}>
-                            {option}
-                        </option>
-                    );
-                })}
-            </select>
-            <h3>You selected: {guestData} </h3>
+                                Select a Time:
+                        </label>
+                        <select onChange={timeOptionsHandler} >
+                            <option>None</option>
 
-            <label htmlFor="time">
-                    <b>Occasion</b>
+                                {availableTimes.map(option => {
+                                    return (
+                                        <option value={option.value}>
+                                            {option.text}
+                                        </option>
+                                    );
+                                })}
+                        </select>
+                        {/* <h3>You selected: {timeData} </h3> */}
+            </div>
+                        
+                    <div className="userInput">
+                            <label>
+                                        Number of guests:
+                                </label>
+                                <select onChange={numberOfGuestChangeHandler}>
+                                    <option>None</option>
+                                    {numberOfGuestOption.map((option, index) => {
+                                        return (
+                                            <option value={option} key={index}>
+                                                {option}
+                                            </option>
+                                        );
+                                    })}
+                                </select>
+                                {/* <h3>You selected: {guestData} </h3> */}
+                    </div>
+            <div className="userInput">
+            <label > Occasion:
             </label>
-            <select onChange={occasionChangeHandler}>
-                <option>Please choose one option</option>
-                {occasionOption.map((option, index) => {
-                    return (
-                        <option value={option} key={index}>
-                            {option}
-                        </option>
-                    );
-                })}
-            </select>
-            <h3>You selected: {occasionData} </h3> */}
+                        <select onChange={occasionChangeHandler}>
+                            <option>None</option>
+                            {occasionOption.map((option, index) => {
+                                return (
+                                    <option value={option} key={index}>
+                                        {option}
+                                    </option>
+                                );
+                            })}
+                        </select>
+                        {/* <h3>You selected: {occasionData} </h3> */}
+            </div>
 
-{/* <label htmlFor="msg" className='content-text w3-text-blue'>
-                <b>Input Announcement Message</b>
+            
+
+                <label>
+                <b>Additional Comments</b>
                 </label>
-              <textarea className="w3-input w3-border" type="text" id="msg" name="announcement" value={formData.announcement} onChange={handleChange} placeholder="Write an announcement.." style={{height:"100px"}}></textarea> */}
+              {/* <textarea className="w3-input w3-border" type="text" id="msg" name="announcement" value={formData.announcement} onChange={handleChange} placeholder="Write an announcement.." style={{height:"100px"}}></textarea> */}
+              <textarea type="text" style={{height:"100px", width: "300px",backgroundColor: "#EEEEEE"}}></textarea>
 
+        <Link to="/confirmation">
         <Button input="Make Your reservation"/>
+        </Link>
 
         </form>
         </div>
