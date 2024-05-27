@@ -40,7 +40,6 @@ function BookingForm(){
     const occasionOption = [
       "Birthday",
       "Anniversary",
-      "None"
     ];
 
 //   functions
@@ -127,11 +126,12 @@ function BookingForm(){
             
 
                 <label>
-                <b>Additional Comments</b>
+                Additional Comments
                 </label>
               {/* <textarea className="w3-input w3-border" type="text" id="msg" name="announcement" value={formData.announcement} onChange={handleChange} placeholder="Write an announcement.." style={{height:"100px"}}></textarea> */}
               <textarea type="text" style={{height:"100px", width: "300px",backgroundColor: "#EEEEEE"}}></textarea>
 
+<p style={{fontSize:"0.8rem"}}>Note: You cannot edit your reservation after submission. Please double check your answer before submitting your reservation request.</p>
         <Link to="/confirmation">
         <Button input="Make Your reservation"/>
         </Link>
